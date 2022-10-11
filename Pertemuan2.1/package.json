@@ -1,0 +1,6 @@
+{
+  "dependencies": {
+    "framework7": "^7.0.8",
+    "framework7-icons": "^5.0.5"
+  }
+}

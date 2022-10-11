@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <!-- Required meta tags-->
+    <meta charset="utf-8">
+    <meta name="viewport"
+        content="width=device-width, initial-scale=1, maximum-scale=1, minimum-scale=1, user-scalable=no, viewport-fit=cover">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <!-- Color theme for statusbar (Android only) -->
+    <meta name="theme-color" content="#2196f3">
+    <!-- Your app title -->
+    <title>My Biodata</title>
+    <!-- Path to Framework7 Library Bundle CSS -->
+    <link rel="stylesheet" href="node_modules/framework7/framework7-bundle.min.css">
+
+    <link rel="stylesheet" href="node_modules/framework7-icons/css/framework7-icons.css">
+    <!-- Path to your custom app styles-->
+    <link rel="stylesheet" href="path/to/my-app.css">
+</head>
+
+<body class="color-theme-gray">
+    <!-- App root element -->
+    <div id="app">
+        <div class="panel panel-right">
+            <div class="block">
+                <p>Ini Adalah Konten right panel</p>
+                <a href="#" class="panel-close">Close</a>
+            </div>
+        </div>
+
+        <!-- Your main view, should have "view-main" class -->
+        <div class="view view-main">
+            <!-- Initial Page, "data-name" contains page name -->
+            <div data-name="home" class="page">
+
+                <!-- Top Navbar-->
+                <div class="navbar">
+                    <div class="navbar-bg"></div>
+                    <div class="navbar-inner">
+                        <!-- Search-->
+                        <div class="searchbar">
+                            <div class="searchbar-inner">
+                                <div class="searchbar-input-wrap">
+                                    <input type="search" placeholder="Search">
+                                    <i class="searchbar-icon"></i>
+                                    <span class="input-clear-button"></span>
+                                </div>
+                                <span class="searchbar-disable-button">Cancel</span>
+                            </div>
+                        </div>
+
+                        <div class="right">
+                            <a href="#" class="link icon-only panel-open" data-panel="right">
+                                <i class="icon f7-icons">menu</i>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Bottom Toolbar -->
+                <div class="toolbar toolbar-bottom">
+                    <div class="toolbar-inner">
+                        <!-- Toolbar links -->
+                        <a href="#" class="link">Home</a>
+                        <a href="#" class="link">Live Chat</a>
+                        <a href="#" class="link">Profile</a>
+                    </div>
+                </div>
+
+                <!-- Scrollable page content -->
+               <div class="page-content">
+                    <div class="block-title">My Biodata</div>
+                    <div class="list menu-list">
+                        <ul>
+                            <li>
+                                <a href="#" class="item-link item-content">
+                                    <div class="item-media"><i class="icon f7-icons">person</i></div>
+                                    <div class="item-inner">
+                                        <div class="item-title">Name</div>
+                                        <div class="item-after">Halomoan Nababan</div>
+                                    </div>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#" class="item-link item-content">
+                                    <div class="item-media"><i class="icon f7-icons">calendar</i></div>
+                                    <div class="item-inner">
+                                        <div class="item-title">Age</div>
+                                        <div class="item-after">21</div>
+                                    </div>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#" class="item-link item-content">
+                                    <div class="item-media"><i class="icon f7-icons">location_circle_fill</i></div>
+                                    <div class="item-inner">
+                                        <div class="item-title">Address</div>
+                                        <div class="item-after">Jl.Abdul Hakim, Gg.susuk II</div>
+                                    </div>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#" class="item-link item-content">
+                                    <div class="item-media"><i class="icon f7-icons">at_circle</i></div>
+                                    <div class="item-inner">
+                                        <div class="item-title">Email</div>
+                                        <div class="item-after">halomoan.nbnz@gmail.com</div>
+                                    </div>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#" class="item-link item-content">
+                                    <div class="item-media"><i class="icon f7-icons">phone</i></div>
+                                    <div class="item-inner">
+                                        <div class="item-title">Hp</div>
+                                        <div class="item-after">0813-7647-9226</div>
+                                    </div>
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+
+                    <div class="card">
+                        <div class="card-header">My Picture</div>
+                        <div class="card-content card-content-padding">
+                            <div data-pagination='{"el":".swipper-pagination" }' data-space-between="50" class="swiper swiper-init">
+                                <div class="swiper-pagination"></div>
+                                <div class="swiper-wrapper">
+                                    <div class="swiper-slide" style="min-width: 50px"><img src="hinata.jpg" alt=""></div>
+                                    <div class="swiper-slide"><img src="hinata.jpg" alt=""></div>
+                                    <div class="swiper-slide"><img src="hinata.jpg" alt=""></div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="card-footer">Contoh Card Konten</div>
+                    </div>
+               </div>
+                
+            </div>
+        </div>
+    </div>
+    <!-- Path to Framework7 Library Bundle JS-->
+    <script type="text/javascript" src="node_modules/framework7/framework7-bundle.min.js"></script>
+    <!-- Path to your app js-->
+    <script type="text/javascript" src="my-app.js"></script>
+</body>
+
+</html>
